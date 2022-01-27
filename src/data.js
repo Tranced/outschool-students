@@ -19,3 +19,13 @@ export const people = [{
   name: 'Subrahmanyan Chandrasekhar',
   imageId: 'lrWQx8l'
 }];
+
+export const teacher = { 
+    id: 0,
+    name: 'Terence Yang',
+    imageSrc: "https://tranced.github.io/assets/myface.jpg"
+}
+
+export const students = [{
+
+}]
