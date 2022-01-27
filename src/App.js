@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { people } from './data.js';
+import Profile from './Profile.js';
 
-function App() {
+export default function Gallery() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section>
+      <h1>Amazing scientists</h1>
+      {people.map(person => (
+        <Profile
+          key={person.id}
+          name={person.name}
+          imageId={person.imageId}
+        />
+      ))}
+    </section>
   );
 }
-
-export default App;
