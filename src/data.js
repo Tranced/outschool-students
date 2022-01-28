@@ -27,5 +27,8 @@ export const teacher = {
 }
 
 export const students = [{
+    id: 8,
+    name: 'TheEvilEmpire08',
+    imageSrc: "https://static.wikia.nocookie.net/expanse/images/a/ae/Donnager_Point-Defence.jpg/revision/latest/scale-to-width-down/1920?cb=20180718191608"
 
-}]
+}] 
