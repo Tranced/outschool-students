@@ -27,5 +27,7 @@ export const teacher = {
 }
 
 export const students = [{
-
+    id: 5,
+    name: "Armando Torres",
+    imageSrc:"https://cdn.checkyeti.com/images/original/Surfing+%28c%29+Shutterstock.jpg"
 }]
