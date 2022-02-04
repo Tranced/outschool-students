@@ -1,4 +1,4 @@
-import { people, teacher } from './data.js';
+import { people, teacher, students} from './data.js';
 import Profile from './Profile.js';
 
 export default function Gallery() {
@@ -23,6 +23,16 @@ export default function Gallery() {
           imageId={teacher.imageSrc}
         />
       }
+    </section>
+    <section>
+      <h1>Amazing students</h1>
+      {students.map(person => (
+        <Profile
+          key={person.id}
+          name={person.name}
+          imageId={person.imageSrc}
+        />
+      ))}
     </section>
     </>
   );
